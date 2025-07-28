@@ -80,6 +80,10 @@ img {
   border: 1px solid #111;
 }
 
+img.description {
+  margin-top: 2em;
+}
+
 .projects {
   display: grid;
   gap: 1em;
