@@ -87,23 +87,27 @@ img.description {
 .container {
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* allows wrapping on small screens */
 }
-
 .item {
   text-align: center;
+  flex: 1 1 200px; /* responsive width */
+  max-width: 250px;
 }
-
+.caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  min-height: 2.5em; /* 👈 reserve space for up to 2 lines */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .item img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
-}
-
-.item p {
-  font-weight: bold;
-  margin-bottom: 1em;
-  text-align: center;
 }
 
 .projects {
