@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kevin E. Acevedo Jetter</title>
+    <meta name="author" content="Kevin E. Acevedo Jetter" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+  </head>
+  <body>
+    <h1>Puerto Rico General Elections - 2024</h1>
+
+    <nav>
+      <li><a href="../">About</a></li>
+      <li><a href="./" class="current">Projects</a></li>
+      <li><a href="../contact">Contact</a></li>
+    </nav>
+
+    <img
+      class="description"
+      src="../images/gobernador-final.png"
+      alt="Map of Puerto Rico - Governor results"
+    />
+
+    <p>
+      Created a web scraper to collect data from the 2024 Puerto Rico General
+      Elections held on November 5, 2024. The data was sourced from the official
+      website of the
+      <a href="https://elecciones2024.ceepur.org/"
+        >Puerto Rico State Elections Commission (CEE)</a
+      >.
+    </p>
+
+    <p>
+      The data gathered was for all the offices and special election at the
+      island, district, and municipal levels. These are:
+    </p>
+
+    <ul>
+      <li>Governor</li>
+      <li>Resident Commissioner</li>
+      <li>Senators At-Large</li>
+      <li>Representatives At-Large</li>
+      <li>District Senators</li>
+      <li>District Representatives</li>
+      <li>Mayors</li>
+      <li>Municipal Legislators</li>
+      <li>President</li>
+      <li>Status Plebiscite</li>
+    </ul>
+
+    <p>
+      The scraper uses Selenium to scrape the website and Pandas to format the
+      data. The data is then saved in CSV format for further analysis.
+      Additionally, the data is visualized using Matplotlib and Geopandas to
+      create the map and PIL to make the GIFs
+    </p>
+
+    <p>
+      The colors in the map created with the data scraped represent the
+      political party of the winning candidate at the moment the data was
+      collected. The parties are:
+    </p>
+
+    <ul>
+      <li>Blue: <a href="https://pnppr.com/">Partido Nuevo Progresista</a></li>
+      <li>Red: <a href="https://ppdpr.net/">Partido Popular Democratico</a></li>
+      <li>
+        Green:
+        <a href="https://partidoindependentista.com/"
+          >Partido Independentista Puertorriqueño</a
+        >
+      </li>
+      <li>
+        Yellow: <a href="https://www.mvc.pr/">Movimiento Victoria Ciudadana</a>
+      </li>
+      <li>
+        Cyan: <a href="https://www.proyectodignidad.org/">Proyecto Dignidad</a>
+      </li>
+      <li>Gray: Tie</li>
+      <li>White: No data reported</li>
+    </ul>
+
+    <p>
+      The following GIFs were made with the data scraped every five minutes the
+      night of the election. With this data, we can see how different
+      municipalities changed winners as the night progressed. Interesting to
+      note that some municipalities changed winners multiple times during the
+      night.
+    </p>
+
+    <div class="container">
+      <div class="item">
+        <p>Governor</p>
+        <img src="../images/gobernador.gif" alt="Governor results GIF" />
+      </div>
+      <div class="item">
+        <p>Resident Commissioner</p>
+        <img
+          src="../images/comisionado-residente.gif"
+          alt="Resident Commissioner results GIF"
+        />
+      </div>
+      <div class="item">
+        <p>Mayor</p>
+        <img src="../images/alcalde.gif" alt="Mayor results GIF" />
+      </div>
+    </div>
+
+    <p>The source code for this project is not available.</p>
+
+    <hr />
+  </body>
+</html>

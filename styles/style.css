@@ -84,6 +84,28 @@ img.description {
   margin-top: 2em;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.item {
+  text-align: center;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.item p {
+  font-weight: bold;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
 .projects {
   display: grid;
   gap: 1em;
