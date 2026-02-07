@@ -1,0 +1,68 @@
+export default function Mastermind() {
+  return (
+    <>
+      <img
+        className="description"
+        src="../images/mastermind-example.png"
+        alt="mastermind game example"
+      />
+
+      <p>
+        Implemented the board game of
+        <a
+          href="https://en.wikipedia.org/wiki/Mastermind_(board_game)"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Mastermind
+        </a>{" "}
+        and will create a solver which uses the Five-guess algorithm. The
+        algorithm will always win the game in at most 5 turns.
+      </p>
+
+      <p>Once the game begins, you should take the first guess.</p>
+
+      <p>
+        To guess, write the first letter of the color you would like to guess.
+        The six colors are the following: red <code>r</code>, blue{" "}
+        <code>b</code>, yellow <code>y</code>, green <code>g</code>, orange{" "}
+        <code>o</code>, and purple <code>p</code>. A guess consist of four
+        colors, which could be repeated, separated by a space. Examples:{" "}
+        <code>r b g y</code>, <code>r r b o</code>, <code>p p p p</code>.
+      </p>
+
+      <p>
+        After the first guess, you will get a message with the amount of black
+        key pegs and white key pegs in no specific order. A black key peg means
+        that you got a color in the correct position and a white key peg means
+        that you have a correct color but in the wrong position. This will be
+        given as four strings <code>b</code>, <code>w</code>, and <code>_</code>{" "}
+        for black key peg, white key peg, and not a black key peg nor a white
+        key peg, respectively.
+      </p>
+
+      <p>
+        This will continue until you get the correct combination or you have
+        used all your guesses.
+      </p>
+
+      <p>
+        To play, run the file in the terminal: <code>python3 main.py</code>
+      </p>
+
+      <p>
+        The source code can be found
+        <a
+          href="https://github.com/AcevedoJetter/master-mind"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          here
+        </a>
+        .
+      </p>
+    </>
+  );
+}

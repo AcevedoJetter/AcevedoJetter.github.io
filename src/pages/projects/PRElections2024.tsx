@@ -1,0 +1,217 @@
+export default function PRElections2024() {
+  return (
+    <>
+      <img
+        className="description"
+        src="../images/gobernador-final.png"
+        alt="Final result map of Governor of Puerto Rico"
+      />
+
+      <h3>Description:</h3>
+
+      <p>
+        This project was completed in November 2024, right after the Puerto Rico
+        General Elections. The goal of the project was to create a web scraper
+        to collect election results data and visualize it in an
+        easy-to-understand format. The above image shows the final results for
+        the Governor race in Puerto Rico.
+      </p>
+
+      <p>
+        Created a web scraper to collect data from the
+        <a
+          href="https://elecciones2024.ceepur.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          2024 Puerto Rico General Elections
+        </a>
+        , held on November 5, 2024. The data was sourced from the official
+        website of the
+        <a
+          href="https://www.ceepur.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {" "}
+          Puerto Rico State Elections Commission (CEE)
+        </a>{" "}
+        and contains all the offices and special election at the island,
+        district, and municipal levels. These are:
+      </p>
+
+      <ul>
+        <li>Governor</li>
+        <li>Resident Commissioner</li>
+        <li>Senators At-Large</li>
+        <li>Representatives At-Large</li>
+        <li>District Senators</li>
+        <li>District Representatives</li>
+        <li>Mayors</li>
+        <li>Municipal Legislators</li>
+        <li>President</li>
+        <li>Status Plebiscite</li>
+      </ul>
+
+      <h3>Technologies used:</h3>
+
+      <p>
+        The scraper uses Selenium to scrape the website since the content loads
+        dynamically. Then, used Pandas to format the data. The data is then
+        saved in CSV format for further analysis. Additionally, it is visualized
+        using Matplotlib and GeoPandas to create the map and PIL to make the
+        GIFs
+      </p>
+
+      <h3>Map details:</h3>
+
+      <p>
+        The colors in the map represent the political party of the winning
+        candidate at the moment the data was collected. The parties are:
+      </p>
+
+      <ul>
+        <li>
+          Blue:
+          <a
+            href="https://en.wikipedia.org/wiki/New_Progressive_Party_(Puerto_Rico)"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Partido Nuevo Progresista (PNP)
+          </a>
+        </li>
+        <li>
+          Red:
+          <a
+            href="https://en.wikipedia.org/wiki/Popular_Democratic_Party_(Puerto_Rico)"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Partido Popular Democratico (PPD)
+          </a>
+        </li>
+        <li>
+          Green:
+          <a
+            href="https://en.wikipedia.org/wiki/Puerto_Rican_Independence_Party"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Partido Independentista Puertorriqueño (PIP)
+          </a>
+        </li>
+        <li>
+          Yellow:
+          <a
+            href="https://en.wikipedia.org/wiki/Movimiento_Victoria_Ciudadana"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Movimiento Victoria Ciudadana (MVC)
+          </a>
+        </li>
+        <li>
+          Cyan:
+          <a
+            href="https://en.wikipedia.org/wiki/Proyecto_Dignidad"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Proyecto Dignidad (PD)
+          </a>
+        </li>
+        <li>Gray: Tie</li>
+        <li>White: No data reported</li>
+      </ul>
+
+      <p>
+        From now on, the parties will be identified with their abbreviation
+        (PNP, PPD, PIP, MVC, PD)
+      </p>
+
+      <h3>Findings:</h3>
+
+      <p>
+        The following GIFs were made with the data scraped every five minutes
+        the night of the election:
+      </p>
+
+      <div className="container">
+        <div className="item">
+          <div className="caption">Governor</div>
+          <img src="../images/gobernador.gif" alt="Governor results GIF" />
+        </div>
+        <div className="item">
+          <div className="caption">Resident Commissioner</div>
+          <img
+            src="../images/comisionado-residente.gif"
+            alt="Resident Commissioner results GIF"
+          />
+        </div>
+        <div className="item">
+          <div className="caption">Mayor</div>
+          <img src="../images/alcalde.gif" alt="Mayor results GIF" />
+        </div>
+      </div>
+
+      <p>
+        Like in nearly all elections, we can see how different municipalities
+        changed winners as the night progressed.
+      </p>
+
+      <p>
+        <b>Governor election:</b> Since the first ballots came in, the winner
+        for this race since the beginning, Jenniffer Gonzalez (PNP), was ahead.
+        In the first few updates, the second place was for Jesus Manuel Ortiz
+        (PPD), but as more data came in, the second place changed dramatically
+        between the candidates from the PPD and PIP. For the first time in the
+        history of the PPD, the party did not finish first or second in the
+        gubernatorial election. We can see from the GIF that the majority of the
+        municipalities that were red (PPD) then turned blue (PNP). The PIP
+        candidate, Juan Dalmau, finished second, making this the best election
+        for the party in its history. Juan Dalmau obtained many votes of the in
+        person voting but when the counted votes from the early ballots came in,
+        Jenniffer Gonzalez gained thousands of votes, helping her secure the
+        victory. It is important to note that the PIP and the MVC had a
+        pre-election pact to not run against each other in certain
+        municipalities, which helped both parties gain more votes and said to
+        vote for the candidate of the PIP in the Governor race and the candidate
+        of the MVC in the Resident Commissioner. This election is the third in a
+        row where the PNP has won the race for Governor.
+      </p>
+
+      <p>
+        <b>Resident Commissioner election:</b> This race was very straight
+        forward, having a clear winner since the beginning, Pablo Jose Hernandez
+        (PPD). The second place was also clear from the start, William Villafañe
+        (PNP). This race did not have many changes during the night, but the
+        main ones were from PNP to the favor the PPD. For the last place, it was
+        very close were the candidate from the PIP got 4.93% of the votes and
+        the candidate of the PD got 4.96% of the votes. The win of Pablo Jose
+        Hernandez breaks the streak of the PNP winning the Resident Commissioner
+        race. The last Resident Commissioner from a party that is not the PNP
+        was Anibal Acevedo Vila (PPD), who won in 2000.
+      </p>
+
+      <p>
+        <b>Mayor elections:</b> As per usual, the 78 mayor races had a winner
+        being either from the PNP or PPD. In the last two elections, 2020 and
+        2024, the mayor election in San Juan has had a third candidate from the
+        MVC, which has made the election interesting in the municipality. In
+        both elections, the PNP candidate, Miguel Romero, won the election, but
+        with Manuel Natal (MVC) in a relative close second place. We can see in
+        the second frame of the GIF that Natal was in first place for the first
+        data release from San Juan, but as more data came in, the PNP candidate,
+        Miguel Romero, took the lead and won the election. At the end of the
+        event, the PNP won 37 municipalities and the PPD won 41.
+      </p>
+    </>
+  );
+}
