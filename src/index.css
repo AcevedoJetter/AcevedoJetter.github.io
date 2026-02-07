@@ -1,6 +1,6 @@
 body {
   font: 100%/1.5 system-ui;
-  max-width: 100ch;
+  /* max-width: 100ch; */
   margin-inline: auto auto;
   padding: 1em;
 }
@@ -40,7 +40,7 @@ nav a:hover {
 }
 
 body {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -89,21 +89,24 @@ img.description {
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
-  flex-wrap: wrap; /* allows wrapping on small screens */
+  flex-wrap: wrap;
 }
+
 .item {
   text-align: center;
-  flex: 1 1 200px; /* responsive width */
+  flex: 1 1 200px;
   max-width: 250px;
 }
+
 .caption {
   font-weight: bold;
   margin-bottom: 10px;
-  min-height: 2.5em; /* 👈 reserve space for up to 2 lines */
+  min-height: 2.5em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .item img {
   width: 100%;
   height: auto;
@@ -116,12 +119,13 @@ img.description {
   grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
   grid-template-rows: subgrid;
   padding: 1em 2em;
-  article {
-    text-align: center;
-    display: grid;
-    grid-row: span 3;
-    grid-template-rows: subgrid;
-  }
+}
+
+.projects article {
+  text-align: center;
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
 }
 
 h1,
