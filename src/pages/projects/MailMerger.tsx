@@ -16,13 +16,12 @@ export default function MailMerger() {
       </p>
 
       <p>
-        For the script to work, you will need to follow the instructions in
+        For the script to work, you will need to follow the instructions in{" "}
         <a
           href="https://www.youtube.com/watch?v=g_j6ILT-X0k"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           this video
         </a>{" "}
         to turn on the two step verification for the Google Account.
@@ -49,13 +48,12 @@ export default function MailMerger() {
       </p>
 
       <p>
-        The source code can be found
+        The source code can be found{" "}
         <a
           href="https://github.com/AcevedoJetter/mail-merge"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           here
         </a>
         .

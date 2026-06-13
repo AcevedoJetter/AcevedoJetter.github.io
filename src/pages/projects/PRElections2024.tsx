@@ -18,23 +18,21 @@ export default function PRElections2024() {
       </p>
 
       <p>
-        Created a web scraper to collect data from the
+        Created a web scraper to collect data from the{" "}
         <a
           href="https://elecciones2024.ceepur.org/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           2024 Puerto Rico General Elections
         </a>
         , held on November 5, 2024. The data was sourced from the official
-        website of the
+        website of the{" "}
         <a
           href="https://www.ceepur.org/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           Puerto Rico State Elections Commission (CEE)
         </a>{" "}
         and contains all the offices and special election at the island,
@@ -73,57 +71,52 @@ export default function PRElections2024() {
 
       <ul>
         <li>
-          Blue:
+          Blue:{" "}
           <a
             href="https://en.wikipedia.org/wiki/New_Progressive_Party_(Puerto_Rico)"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
             Partido Nuevo Progresista (PNP)
           </a>
         </li>
         <li>
-          Red:
+          Red:{" "}
           <a
             href="https://en.wikipedia.org/wiki/Popular_Democratic_Party_(Puerto_Rico)"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
             Partido Popular Democratico (PPD)
           </a>
         </li>
         <li>
-          Green:
+          Green:{" "}
           <a
             href="https://en.wikipedia.org/wiki/Puerto_Rican_Independence_Party"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
             Partido Independentista Puertorriqueño (PIP)
           </a>
         </li>
         <li>
-          Yellow:
+          Yellow:{" "}
           <a
             href="https://en.wikipedia.org/wiki/Movimiento_Victoria_Ciudadana"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
             Movimiento Victoria Ciudadana (MVC)
           </a>
         </li>
         <li>
-          Cyan:
+          Cyan:{" "}
           <a
             href="https://en.wikipedia.org/wiki/Proyecto_Dignidad"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {" "}
             Proyecto Dignidad (PD)
           </a>
         </li>

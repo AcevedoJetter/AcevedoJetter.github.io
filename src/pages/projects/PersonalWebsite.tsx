@@ -9,13 +9,12 @@ export default function PersonalWebsite() {
 
       <p>
         This website was created originally with simple HTML but later changed
-        to use React, TypeScript, and Vite. It is hosted on
+        to use React, TypeScript, and Vite. It is hosted on{" "}
         <a
           href="https://pages.github.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           GitHub Pages
         </a>
         .
@@ -28,13 +27,12 @@ export default function PersonalWebsite() {
       </p>
 
       <p>
-        The source code can be found
+        The source code can be found{" "}
         <a
           href="https://github.com/AcevedoJetter/AcevedoJetter.github.io"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           here
         </a>
         .

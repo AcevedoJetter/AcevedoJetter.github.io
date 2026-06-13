@@ -61,7 +61,7 @@ function drawField(svg: d3.Selection<SVGGElement, unknown, null, undefined>) {
         .innerRadius(0)
         .outerRadius(425)
         .startAngle(-Math.PI / 4)
-        .endAngle(Math.PI / 4)
+        .endAngle(Math.PI / 4),
     )
     .attr("stroke", "green")
     .attr("stroke-width", 2)
@@ -117,7 +117,7 @@ export default function BaseballField({
     let filteredData = data;
     if (selectedOutcome && selectedOutcome !== "all") {
       filteredData = filteredData.filter(
-        (d) => d.PLAY_OUTCOME === selectedOutcome
+        (d) => d.PLAY_OUTCOME === selectedOutcome,
       );
     }
     if (selectedBatter) {
@@ -133,7 +133,7 @@ export default function BaseballField({
         (d) =>
           `${d.GAME_DATE}-${d.HIT_DISTANCE}-${d.BATTER}-${
             selectedOutcome || ""
-          }-${selectedBatter || ""}`
+          }-${selectedBatter || ""}`,
       );
 
     circles.join(
@@ -148,13 +148,13 @@ export default function BaseballField({
             "cx",
             (d) =>
               distanceScale(d.HIT_DISTANCE) *
-              Math.sin((d.EXIT_DIRECTION * Math.PI) / 180)
+              Math.sin((d.EXIT_DIRECTION * Math.PI) / 180),
           )
           .attr(
             "cy",
             (d) =>
               -distanceScale(d.HIT_DISTANCE) *
-              Math.cos((d.EXIT_DIRECTION * Math.PI) / 180)
+              Math.cos((d.EXIT_DIRECTION * Math.PI) / 180),
           )
           .on("mouseover", (_event, d) => {
             const playOutcome = formatPlayOutcome(d.PLAY_OUTCOME);
@@ -178,7 +178,7 @@ export default function BaseballField({
               .style("top", `${event.pageY - 28}px`);
           })
           .on("mouseout", () =>
-            tooltip.transition().duration(200).style("opacity", 0)
+            tooltip.transition().duration(200).style("opacity", 0),
           ),
       (update) =>
         update
@@ -188,16 +188,16 @@ export default function BaseballField({
             "cx",
             (d) =>
               distanceScale(d.HIT_DISTANCE) *
-              Math.sin((d.EXIT_DIRECTION * Math.PI) / 180)
+              Math.sin((d.EXIT_DIRECTION * Math.PI) / 180),
           )
           .attr(
             "cy",
             (d) =>
               -distanceScale(d.HIT_DISTANCE) *
-              Math.cos((d.EXIT_DIRECTION * Math.PI) / 180)
+              Math.cos((d.EXIT_DIRECTION * Math.PI) / 180),
           )
           .attr("fill", (d) => COLOR_SCALE[d.PLAY_OUTCOME] || "brown"),
-      (exit) => exit.transition().duration(300).attr("r", 0).remove()
+      (exit) => exit.transition().duration(300).attr("r", 0).remove(),
     );
   }, [data, selectedOutcome, selectedBatter, tooltipId]);
 

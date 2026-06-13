@@ -14,13 +14,12 @@ export default function SpotifyDataAnalysis() {
       <p>
         How to get the data: The folder that you have should contain your entire
         streaming history data for the life of your account. This can be
-        obtained by pressing the <code>Request data</code> button in
+        obtained by pressing the <code>Request data</code> button in{" "}
         <a
           href="https://www.spotify.com/us/account/privacy/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           this website
         </a>{" "}
         if you are logged in to your account. Make sure to select the field that
@@ -39,13 +38,12 @@ export default function SpotifyDataAnalysis() {
       </p>
 
       <p>
-        The following is from the
+        The following is from the{" "}
         <a
           href="https://support.spotify.com/us/article/understanding-my-data/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           Understanding my Data
         </a>
         . A list of items (e.g. songs, videos, and podcasts) listened to or
@@ -145,13 +143,12 @@ export default function SpotifyDataAnalysis() {
         All the functions in <code>main.py</code> have docstrings which contains
         the parameters of the function and it also contains what is returned by
         the function. Note that the columns of the pandas DataFrame returned by{" "}
-        <code>get_all_data()</code> can be found
+        <code>get_all_data()</code> can be found{" "}
         <a
           href="https://github.com/AcevedoJetter/spotify-data-analysis#mydata"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           here
         </a>
       </p>
@@ -184,13 +181,12 @@ export default function SpotifyDataAnalysis() {
       </ul>
 
       <p>
-        The source code can be found
+        The source code can be found{" "}
         <a
           href="https://github.com/AcevedoJetter/spotify-data-analysis"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           here
         </a>
         .

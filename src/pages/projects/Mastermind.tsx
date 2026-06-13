@@ -8,13 +8,12 @@ export default function Mastermind() {
       />
 
       <p>
-        Implemented the board game of
+        Implemented the board game of{" "}
         <a
           href="https://en.wikipedia.org/wiki/Mastermind_(board_game)"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           Mastermind
         </a>{" "}
         and will create a solver which uses the Five-guess algorithm. The
@@ -52,13 +51,12 @@ export default function Mastermind() {
       </p>
 
       <p>
-        The source code can be found
+        The source code can be found{" "}
         <a
           href="https://github.com/AcevedoJetter/master-mind"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           here
         </a>
         .

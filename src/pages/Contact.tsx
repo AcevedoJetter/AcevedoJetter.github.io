@@ -1,10 +1,7 @@
 export default function Contact() {
   return (
     <>
-      <p>
-        Feel free to reach out to me via email and connect on LinkedIn or
-        GitHub!
-      </p>
+      <p>Feel free to reach out to me via email and connect on LinkedIn!</p>
       <p>Email: kevin (at) acevedojetter (dot) com</p>
       <p>
         LinkedIn:{" "}

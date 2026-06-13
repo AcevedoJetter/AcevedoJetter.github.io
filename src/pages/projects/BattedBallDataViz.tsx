@@ -186,13 +186,12 @@ export default function BattedBallDataViz() {
       </p>
 
       <p>
-        The source code can be found
+        The source code can be found{" "}
         <a
           href="https://github.com/AcevedoJetter/batted-ball-data-viz"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           here
         </a>
         .

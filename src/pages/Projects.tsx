@@ -77,20 +77,24 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <>
-      <div className="projects">
-        {projects.map((project) => (
-          <article key={project.id}>
+    <div className="projects">
+      {projects.map((project) => (
+        <article key={project.id} className="project-card">
+          <img
+            src={project.image}
+            alt={project.alt}
+            className="project-card-img"
+          />
+          <div className="project-card-body">
             <h3>{project.title}</h3>
-            <img src={project.image} alt={project.alt} />
             <p>
               {project.description.split("{link}")[0]}
               <Link to={project.link}>here</Link>
               {project.description.split("{link}")[1]}
             </p>
-          </article>
-        ))}
-      </div>
-    </>
+          </div>
+        </article>
+      ))}
+    </div>
   );
 }

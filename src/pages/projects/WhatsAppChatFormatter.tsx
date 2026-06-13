@@ -43,13 +43,12 @@ export default function WhatsAppChatFormatter() {
       </p>
 
       <p>
-        The source code can be found
+        The source code can be found{" "}
         <a
           href="https://github.com/AcevedoJetter/whatsapp-cleaner"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {" "}
           here
         </a>
         .
