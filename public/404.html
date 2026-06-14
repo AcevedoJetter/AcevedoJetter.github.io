@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kevin E. Acevedo Jetter</title>
+    <script>
+      // Encode the current path/query/hash as a query string and redirect to /
+      // so GitHub Pages (which only serves index.html at /) can handle SPA routing.
+      // index.html decodes this back with history.replaceState before React boots.
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          "//" +
+          l.host +
+          "/" +
+          "?/" +
+          l.pathname.slice(1).replace(/&/g, "~and~") +
+          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+          l.hash,
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
